@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>シンミドウ採用コラム - 中小企業の採用戦略ガイド</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.8;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        header {
+            text-align: center;
+            color: white;
+            margin-bottom: 50px;
+        }
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+        .subtitle {
+            font-size: 1.1em;
+            opacity: 0.9;
+            margin-bottom: 20px;
+        }
+        .tagline {
+            font-size: 0.95em;
+            opacity: 0.85;
+        }
+        .articles-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin-bottom: 40px;
+        }
+        .article-card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+            transition: all 0.3s ease;
+            display: flex;
+            flex-direction: column;
+        }
+        .article-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 24px rgba(0,0,0,0.25);
+        }
+        .article-header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .article-number {
+            display: inline-block;
+            background: rgba(255,255,255,0.3);
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-size: 0.85em;
+            margin-bottom: 10px;
+        }
+        .article-header h2 {
+            font-size: 1.3em;
+            margin-bottom: 10px;
+            line-height: 1.4;
+        }
+        .article-body {
+            padding: 20px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        .article-target {
+            background-color: #f0f0f0;
+            padding: 12px;
+            border-left: 3px solid #667eea;
+            margin-bottom: 15px;
+            font-size: 0.9em;
+            border-radius: 4px;
+        }
+        .article-target strong {
+            color: #667eea;
+        }
+        .article-description {
+            font-size: 0.95em;
+            color: #555;
+            margin-bottom: 20px;
+            flex-grow: 1;
+        }
+        .read-more {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+            align-self: flex-start;
+            font-weight: 500;
+        }
+        .read-more:hover {
+            transform: translateX(3px);
+            box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+        }
+        .info-box {
+            background: white;
+            border-radius: 10px;
+            padding: 30px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            margin-bottom: 40px;
+        }
+        .info-box h3 {
+            color: #667eea;
+            margin-bottom: 15px;
+            font-size: 1.5em;
+        }
+        .info-box p {
+            color: #555;
+            margin-bottom: 10px;
+            font-size: 0.95em;
+        }
+        footer {
+            text-align: center;
+            color: white;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255,255,255,0.2);
+            margin-top: 50px;
+            font-size: 0.9em;
+        }
+        .badge {
+            display: inline-block;
+            background: #ff6b6b;
+            color: white;
+            padding: 4px 10px;
+            border-radius: 20px;
+            font-size: 0.75em;
+            margin-right: 8px;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.8em;
+            }
+            .articles-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📊 シンミドウ採用コラム</h1>
+            <p class="subtitle">中小企業の採用戦略ガイド 2026</p>
+            <p class="tagline">採用難を乗り越え、企業の成長を加速させるための5つのコラム</p>
+        </header>
+
+        <div class="info-box">
+            <h3>✨ このプロジェクトについて</h3>
+            <p>シンミドウが提供する採用支援の知見をまとめた、中小企業向けのコラムシリーズです。</p>
+            <p>採用トレンド、地域創生、新入社員定着、中途採用、採用ブランディングの5つのテーマで、</p>
+            <p>実践的な採用戦略をお伝えします。</p>
+        </div>
+
+        <div class="articles-grid">
+            <!-- コラム1 -->
+            <div class="article-card">
+                <div class="article-header">
+                    <div class="article-number">01 / 5</div>
+                    <h2>採用の最新記事まとめ</h2>
+                </div>
+                <div class="article-body">
+                    <div class="article-target">
+                        <strong>ターゲット：</strong>採用難に悩む中小企業の経営者
+                    </div>
+                    <p class="badge">トレンド分析</p>
+                    <div class="article-description">
+                        2026年の採用市場で注目すべき3つのトレンド：企業ストーリー、働き方の多様性、継続的な発信。中小企業が大企業に勝つための戦略を解説します。
+                    </div>
+                    <a href="01-hiring-trends.html" class="read-more">📖 記事を読む</a>
+                </div>
+            </div>
+
+            <!-- コラム2 -->
+            <div class="article-card">
+                <div class="article-header">
+                    <div class="article-number">02 / 5</div>
+                    <h2>地方中小企業の人口流出を止める方法</h2>
+                </div>
+                <div class="article-body">
+                    <div class="article-target">
+                        <strong>ターゲット：</strong>地域活性化に取り組む自治体職員、地方企業経営者
+                    </div>
+                    <p class="badge">地域創生</p>
+                    <div class="article-description">
+                        採用難の本質は「認知度不足」。地域創生と採用が一体化する理由と、地方企業が今すぐできる対策を紹介します。
+                    </div>
+                    <a href="02-regional-hiring.html" class="read-more">📖 記事を読む</a>
+                </div>
+            </div>
+
+            <!-- コラム3 -->
+            <div class="article-card">
+                <div class="article-header">
+                    <div class="article-number">03 / 5</div>
+                    <h2>新入社員の早期離職を防ぐ方法</h2>
+                </div>
+                <div class="article-body">
+                    <div class="article-target">
+                        <strong>ターゲット：</strong>新入社員の離職に悩む中小企業の経営者・人事担当者
+                    </div>
+                    <p class="badge">人材定着</p>
+                    <div class="article-description">
+                        中小企業の3年以内離職率50%を脱する戦略。オンボーディング、メンター制度、定期面談の3点セットで70%の離職率削減を実現。
+                    </div>
+                    <a href="03-new-employee-retention.html" class="read-more">📖 記事を読む</a>
+                </div>
+            </div>
+
+            <!-- コラム4 -->
+            <div class="article-card">
+                <div class="article-header">
+                    <div class="article-number">04 / 5</div>
+                    <h2>中途採用で失敗しないためのポイント</h2>
+                </div>
+                <div class="article-body">
+                    <div class="article-target">
+                        <strong>ターゲット：</strong>採用で「経験者層」の確保を急ぐ中小企業の経営者・人事担当者
+                    </div>
+                    <p class="badge">中途採用</p>
+                    <div class="article-description">
+                        中途採用者の1年以内離職率は新卒の3倍。採用前の期待値設定と配置後のギャップ対応が鍵です。5つのポイントを解説。
+                    </div>
+                    <a href="04-midcareer-hiring.html" class="read-more">📖 記事を読む</a>
+                </div>
+            </div>
+
+            <!-- コラム5 -->
+            <div class="article-card">
+                <div class="article-header">
+                    <div class="article-number">05 / 5</div>
+                    <h2>採用ブランディングとは何か</h2>
+                </div>
+                <div class="article-body">
+                    <div class="article-target">
+                        <strong>ターゲット：</strong>採用力を本質的に強くしたい中小企業の経営者・人事担当者
+                    </div>
+                    <p class="badge">ブランディング</p>
+                    <div class="article-description">
+                        「小さい会社」が大企業に勝つ唯一の方法。企業ストーリーの言語化、多角的な発信、継続的な改善サイクルで採用力を磨く。
+                    </div>
+                    <a href="05-recruitment-branding.html" class="read-more">📖 記事を読む</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="info-box">
+            <h3>🎯 シリーズ全体の流れ</h3>
+            <p>📌 01: 採用の最新トレンドを把握</p>
+            <p>📌 02: 地域の課題に向き合う</p>
+            <p>📌 03: 採用後の定着に注力</p>
+            <p>📌 04: 中途採用の失敗を防ぐ</p>
+            <p>📌 05: ブランディングで継続的な採用体制を構築</p>
+        </div>
+
+        <footer>
+            <p>作成日：2026年2月23日</p>
+            <p>作成者：シンミドウコラム自動作成プロジェクト</p>
+            <p>&copy; 2026 Shinmidou. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
