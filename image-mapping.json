@@ -1,0 +1,162 @@
+[
+  {
+    "image_number": 1,
+    "filename": "g1.jpg",
+    "original_url": "https://picsum.photos/1200/600?random=1",
+    "license": "Lorem Picsum (CC0)",
+    "from_file": "01-hiring-trends.html",
+    "alt_text": "2026年採用市場トレンドと対応策の概要"
+  },
+  {
+    "image_number": 2,
+    "filename": "g2.jpg",
+    "original_url": "https://picsum.photos/1200/600?random=2",
+    "license": "Lorem Picsum (CC0)",
+    "from_file": "01-hiring-trends.html",
+    "alt_text": "企業ストーリー発信による採用力向上"
+  },
+  {
+    "image_number": 3,
+    "filename": "g3.jpg",
+    "original_url": "https://picsum.photos/1200/600?random=3",
+    "license": "Lorem Picsum (CC0)",
+    "from_file": "01-hiring-trends.html",
+    "alt_text": "働き方の多様性が採用競争力に"
+  },
+  {
+    "image_number": 4,
+    "filename": "g4.jpg",
+    "original_url": "https://picsum.photos/1200/600?random=4",
+    "license": "Lorem Picsum (CC0)",
+    "from_file": "01-hiring-trends.html",
+    "alt_text": "継続的な採用情報発信戦略"
+  },
+  {
+    "image_number": 5,
+    "filename": "g5.jpg",
+    "original_url": "https://picsum.photos/1200/600?random=5",
+    "license": "Lorem Picsum (CC0)",
+    "from_file": "02-regional-hiring.html",
+    "alt_text": "地域創生採用戦略の全体像"
+  },
+  {
+    "image_number": 6,
+    "filename": "g6.jpg",
+    "original_url": "https://picsum.photos/1200/600?random=6",
+    "license": "Lorem Picsum (CC0)",
+    "from_file": "02-regional-hiring.html",
+    "alt_text": "地方企業の人材獲得戦略"
+  },
+  {
+    "image_number": 7,
+    "filename": "g7.jpg",
+    "original_url": "https://picsum.photos/1200/600?random=7",
+    "license": "Lorem Picsum (CC0)",
+    "from_file": "02-regional-hiring.html",
+    "alt_text": "Uターン・Iターン人材の活用"
+  },
+  {
+    "image_number": 8,
+    "filename": "g8.jpg",
+    "original_url": "https://picsum.photos/1200/600?random=8",
+    "license": "Lorem Picsum (CC0)",
+    "from_file": "02-regional-hiring.html",
+    "alt_text": "地域とのつながりを生かした採用"
+  },
+  {
+    "image_number": 9,
+    "filename": "g9.jpg",
+    "original_url": "https://picsum.photos/1200/600?random=9",
+    "license": "Lorem Picsum (CC0)",
+    "from_file": "03-new-employee-retention.html",
+    "alt_text": "新入社員早期離職の原因分析"
+  },
+  {
+    "image_number": 10,
+    "filename": "g10.jpg",
+    "original_url": "https://picsum.photos/1200/600?random=10",
+    "license": "Lorem Picsum (CC0)",
+    "from_file": "03-new-employee-retention.html",
+    "alt_text": "オンボーディング計画の重要性"
+  },
+  {
+    "image_number": 11,
+    "filename": "g11.jpg",
+    "original_url": "https://picsum.photos/1200/600?random=11",
+    "license": "Lorem Picsum (CC0)",
+    "from_file": "03-new-employee-retention.html",
+    "alt_text": "メンター制度と育成環境"
+  },
+  {
+    "image_number": 12,
+    "filename": "g12.jpg",
+    "original_url": "https://picsum.photos/1200/600?random=12",
+    "license": "Lorem Picsum (CC0)",
+    "from_file": "03-new-employee-retention.html",
+    "alt_text": "長期定着のための施策"
+  },
+  {
+    "image_number": 13,
+    "filename": "g13.jpg",
+    "original_url": "https://picsum.photos/1200/600?random=13",
+    "license": "Lorem Picsum (CC0)",
+    "from_file": "04-midcareer-hiring.html",
+    "alt_text": "中途採用失敗のパターン分析"
+  },
+  {
+    "image_number": 14,
+    "filename": "g14.jpg",
+    "original_url": "https://picsum.photos/1200/600?random=14",
+    "license": "Lorem Picsum (CC0)",
+    "from_file": "04-midcareer-hiring.html",
+    "alt_text": "ターゲット人材の定義と確保"
+  },
+  {
+    "image_number": 15,
+    "filename": "g15.jpg",
+    "original_url": "https://picsum.photos/1200/600?random=15",
+    "license": "Lorem Picsum (CC0)",
+    "from_file": "04-midcareer-hiring.html",
+    "alt_text": "ジョブディスクリプションの活用"
+  },
+  {
+    "image_number": 16,
+    "filename": "g16.jpg",
+    "original_url": "https://picsum.photos/1200/600?random=16",
+    "license": "Lorem Picsum (CC0)",
+    "from_file": "04-midcareer-hiring.html",
+    "alt_text": "オンボーディングと早期活躍"
+  },
+  {
+    "image_number": 17,
+    "filename": "g17.jpg",
+    "original_url": "https://picsum.photos/1200/600?random=17",
+    "license": "Lorem Picsum (CC0)",
+    "from_file": "05-recruitment-branding.html",
+    "alt_text": "エンプロイヤーブランドの概要"
+  },
+  {
+    "image_number": 18,
+    "filename": "g18.jpg",
+    "original_url": "https://picsum.photos/1200/600?random=18",
+    "license": "Lorem Picsum (CC0)",
+    "from_file": "05-recruitment-branding.html",
+    "alt_text": "企業文化の発信と可視化"
+  },
+  {
+    "image_number": 19,
+    "filename": "g19.jpg",
+    "original_url": "https://picsum.photos/1200/600?random=19",
+    "license": "Lorem Picsum (CC0)",
+    "from_file": "05-recruitment-branding.html",
+    "alt_text": "社員の声を活かしたブランディング"
+  },
+  {
+    "image_number": 20,
+    "filename": "g20.jpg",
+    "original_url": "https://picsum.photos/1200/600?random=20",
+    "license": "Lorem Picsum (CC0)",
+    "from_file": "05-recruitment-branding.html",
+    "alt_text": "採用ブランドの成果測定"
+  }
+]
