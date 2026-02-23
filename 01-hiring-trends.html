@@ -192,6 +192,7 @@
 
         .section-image {
             width: 100%;
+            max-width: 100%;
             aspect-ratio: 16 / 9;
             margin: 20px 0;
             border-radius: 8px;
@@ -208,7 +209,14 @@
             font-style: italic;
         }
 
-        @media (max-width: 768px) {
+        .image-container {
+            width: 100%;
+            max-width: 100%;
+            margin: 20px 0;
+            overflow: hidden;
+        }
+
+                @media (max-width: 768px) {
             .article-container {
                 padding: 20px;
             }
@@ -279,6 +287,10 @@
 
         <div class="content-section">
             <div class="section-title">【導入】</div>
+            <div class="image-container">
+                <img src="slider-images/g1.jpg" alt="採用トレンド" class="section-image">
+                <div class="image-caption">2026年の採用トレンド</div>
+            </div>
             <div class="intro-text">
                 <p>「人手不足」は、もはや中小企業の経営課題の最上位です。</p>
                 <p>特に今、採用市場は急速に変わっています。求人票を出しても応募が来ない、内定を出しても辞退される、採用にかかるコストだけが膨らむ――こんなお悩みを聞くことが増えました。</p>
@@ -289,6 +301,10 @@
             <hr class="separator">
 
             <div class="section-title">【1つ目のトレンド：「企業のストーリー」が採用力を左右する時代】</div>
+            <div class="image-container">
+                <img src="slider-images/g2.jpg" alt="企業ストーリー" class="section-image">
+                <div class="image-caption">企業ストーリーが採用力を左右</div>
+            </div>
             <p>求職者が企業を選ぶ基準が変わりました。</p>
             <p>給与や福利厚生ももちろん大事ですが、今の求職者（特に若い世代）は、「この会社は何をしたいのか」「働く意味は何か」という「企業のストーリー」を重視しています。</p>
 
@@ -308,6 +324,10 @@
             <hr class="separator">
 
             <div class="section-title">【2つ目のトレンド：「働き方の多様性」が採用競争力になる】</div>
+            <div class="image-container">
+                <img src="slider-images/g3.jpg" alt="働き方の多様性" class="section-image">
+                <div class="image-caption">働き方の多様性が競争力に</div>
+            </div>
             <p>かつての「正社員＋給与」という採用軸は、もう十分ではありません。</p>
 
             <div class="subsection-title">■何が起きているのか</div>
@@ -328,6 +348,10 @@
             <hr class="separator">
 
             <div class="section-title">【3つ目のトレンド：「採用」は一時的ではなく「継続的な発信」の時代】</div>
+            <div class="image-container">
+                <img src="slider-images/g4.jpg" alt="継続的な採用発信" class="section-image">
+                <div class="image-caption">継続的な採用発信が重要</div>
+            </div>
             <p>従来の採用は「採用時期が来たら求人を出す」という期間限定型でした。</p>
             <p>今は違います。</p>
 
