@@ -84,7 +84,7 @@
         /* Swiper Container Styles */
         .swiper {
             width: 100%;
-            height: 500px;
+            aspect-ratio: 16 / 9;
             margin: 40px 0;
             border-radius: 8px;
             overflow: hidden;
@@ -96,12 +96,13 @@
             align-items: center;
             justify-content: center;
             background-color: #f5f5f5;
+            aspect-ratio: 16 / 9;
         }
 
         .swiper-slide img {
             width: 100%;
             height: 100%;
-            object-fit: contain;
+            object-fit: cover;
         }
 
         .swiper-button-next,
@@ -191,11 +192,12 @@
 
         .section-image {
             width: 100%;
-            height: auto;
+            aspect-ratio: 16 / 9;
             margin: 20px 0;
             border-radius: 8px;
             box-shadow: 0 2px 8px rgba(0,0,0,0.1);
             display: block;
+            object-fit: cover;
         }
 
         .image-caption {
@@ -216,7 +218,7 @@
             }
 
             .swiper {
-                height: 300px;
+                aspect-ratio: 16 / 9;
             }
 
             .swiper-button-next,
