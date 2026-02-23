@@ -4,357 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>地方中小企業の人口流出を止める方法～地域創生と採用の関係性～</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.8;
-            color: #333;
-            background-color: #f9f9f9;
-            margin: 0;
-            padding: 20px;
-        }
-        .article-container {
-            max-width: 900px;
-            margin: 0 auto;
-            background-color: white;
-            padding: 40px;
-            border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-        }
-        h1 {
-            color: #1a73e8;
-            border-bottom: 3px solid #1a73e8;
-            padding-bottom: 15px;
-            margin-bottom: 10px;
-        }
-        .target {
-            background-color: #f0f0f0;
-            padding: 15px;
-            border-left: 4px solid #1a73e8;
-            margin: 20px 0;
-            font-style: italic;
-        }
-        .toc {
-            background-color: #f9f9f9;
-            padding: 20px;
-            border-radius: 5px;
-            margin: 30px 0;
-        }
-        .toc h2 {
-            margin-top: 0;
-            color: #1a73e8;
-        }
-        .toc ol {
-            margin: 0;
-            padding-left: 25px;
-        }
-        .toc li {
-            margin: 8px 0;
-        }
-        .separator {
-            border: none;
-            border-top: 2px solid #ddd;
-            margin: 30px 0;
-        }
-        .section-title {
-            color: #1a73e8;
-            font-size: 1.4em;
-            margin-top: 30px;
-            margin-bottom: 15px;
-            border-left: 4px solid #1a73e8;
-            padding-left: 15px;
-        }
-        .subsection-title {
-            color: #333;
-            font-size: 1.2em;
-            margin-top: 20px;
-            margin-bottom: 10px;
-            font-weight: bold;
-        }
-        .subsubsection-title {
-            color: #555;
-            font-size: 1.05em;
-            margin-top: 15px;
-            margin-bottom: 10px;
-            font-weight: bold;
-        }
-        .image-container {
-            text-align: center;
-            margin: 30px 0;
-            padding: 20px;
-            background-color: #f9f9f9;
-            border-radius: 5px;
-        }
-        .image-container img {
-            width: 100%;
-            max-width: 800px;
-            height: auto;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-        }
-        .image-caption {
-            text-align: center;
-            font-size: 0.9em;
-            color: #666;
-            margin-top: 10px;
-            font-style: italic;
-        }
-        ul {
-            margin: 15px 0;
-            padding-left: 25px;
-        }
-        li {
-            margin: 10px 0;
-        }
-        .highlight {
-            background-color: #fffacd;
-            padding: 2px 6px;
-            border-radius: 3px;
-        }
-        .meta {
-            background-color: #f0f0f0;
-            padding: 15px;
-            border-radius: 5px;
-            margin-top: 30px;
-            font-size: 0.9em;
-            color: #666;
-        }
-        .data-box {
-            background-color: #f9f9f9;
-            padding: 15px;
-            border-left: 4px solid #ff9800;
-            margin: 20px 0;
-        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.8; color: #333; background-color: #f9f9f9; padding: 20px; }
+        .article-container { max-width: 1000px; margin: 0 auto; background-color: white; padding: 40px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+        h1 { color: #1a73e8; border-bottom: 3px solid #1a73e8; padding-bottom: 15px; margin-bottom: 30px; font-size: 1.8em; }
+        .target { background-color: #f0f0f0; padding: 15px; border-left: 4px solid #1a73e8; margin: 20px 0; font-style: italic; }
+        .swiper { width: 100%; height: 500px; margin: 40px 0; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.15); }
+        .swiper-slide { display: flex; align-items: center; justify-content: center; background-color: #f5f5f5; }
+        .swiper-slide img { width: 100%; height: 100%; object-fit: contain; }
+        .swiper-button-next, .swiper-button-prev { background-color: rgba(26, 115, 232, 0.9); width: 50px; height: 50px; border-radius: 50%; color: white; }
+        .swiper-button-next::after, .swiper-button-prev::after { font-size: 20px; }
+        .swiper-button-next:hover, .swiper-button-prev:hover { background-color: rgba(26, 115, 232, 1); }
+        .swiper-pagination-bullet { background-color: #1a73e8; opacity: 0.5; }
+        .swiper-pagination-bullet-active { background-color: #1a73e8; opacity: 1; }
+        .slide-counter { text-align: center; margin-top: 15px; color: #666; font-size: 0.9em; }
+        .meta { background-color: #f0f0f0; padding: 15px; border-radius: 5px; margin-top: 40px; font-size: 0.9em; color: #666; }
+        @media (max-width: 768px) { .article-container { padding: 20px; } h1 { font-size: 1.4em; } .swiper { height: 300px; } .swiper-button-next, .swiper-button-prev { width: 40px; height: 40px; } }
     </style>
 </head>
 <body>
     <div class="article-container">
         <h1>■ 地方中小企業の人口流出を止める方法～地域創生と採用の関係性～</h1>
-
-        <div class="target">
-            <strong>【ターゲット】</strong>地域活性化に取り組む自治体職員、地方の中小企業経営者
+        <div class="target"><strong>【ターゲット】</strong>地方に拠点を置く中小企業の経営者</div>
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="https://takeda-png.github.io/sinmido-recruitment-columns/images/column2-1.png" alt="地域創生採用戦略の全体像"></div>
+                <div class="swiper-slide"><img src="https://takeda-png.github.io/sinmido-recruitment-columns/images/column2-2.png" alt="地方企業の人材獲得戦略"></div>
+                <div class="swiper-slide"><img src="https://takeda-png.github.io/sinmido-recruitment-columns/images/column2-3.png" alt="Uターン・Iターン人材の活用"></div>
+                <div class="swiper-slide"><img src="https://takeda-png.github.io/sinmido-recruitment-columns/images/column2-4.png" alt="地域とのつながりを生かした採用"></div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
         </div>
-
-        <div class="toc">
-            <h2>【目次】</h2>
-            <ol>
-                <li>この記事のポイント</li>
-                <li>地方中小企業が直面する「3つの採用課題」</li>
-                <li>「地域創生」と「採用」が一体化する理由</li>
-                <li>地方中小企業が今すぐできる「地域創生型採用」</li>
-                <li>「地域創生型採用」がもたらす長期的な効果</li>
-                <li>まとめ</li>
-            </ol>
-        </div>
-
-        <hr class="separator">
-
-        <div class="section-title">【この記事のポイント】</div>
-        <ul>
-            <li>✓ 地方は採用難ではなく「認知度不足」が本質～若い人材が地元企業を知らないのが最大の課題</li>
-            <li>✓ 地域創生と採用は別問題ではなく同じ課題～企業の成長と地域の人口維持は表裏一体</li>
-            <li>✓ 地元企業が勝つには「ストーリー発信×働き方改革×自治体連携」が不可欠～大企業には真似できない地域密着型採用戦略</li>
-        </ul>
-
-        <hr class="separator">
-
-        <div class="section-title">【地方中小企業が直面する「3つの採用課題」】</div>
-
-        <div class="subsection-title">■課題1：若い人材の都市部流出</div>
-
-        <div class="subsubsection-title">●問題の本質</div>
-        <p>埼玉県内の地方自治体や中小企業から、こんな悩みをよく聞きます：</p>
-        <p>「求人を出しても応募が来ない。あったとしても、大手企業や都市部企業を選ばれてしまう」</p>
-        <p>統計では、全国の地方圏の人口流出は加速しており、特に15～29歳の若年層の都市部への転出が顕著です。しかし、これは単なる「都市への憧れ」ではなく、より深い理由があります。</p>
-
-        <div class="image-container">
-            <img src="images/column2-1.png" alt="地方の人口流出統計と若年層転出の傾向">
-            <div class="image-caption">図1：地方の人口流出統計と若年層転出の傾向</div>
-        </div>
-
-        <div class="subsubsection-title">●シンミドウが見た現実</div>
-        <p>シンミドウが埼玉県内の製造業・建設業・福祉施設などの中小企業50社以上の採用支援を行う中で明らかになったのは：</p>
-        <p><span class="highlight">「地元の優秀な高校生や大学生の多くが、地元企業の存在すら知らない」</span></p>
-        <p>という事実です。彼らが知っているのは、駅前にある大手チェーンや、全国的に有名な企業ばかり。地元の優良企業のことはまったく認知していないのです。</p>
-
-        <div class="subsubsection-title">●採用が困難な理由</div>
-        <ul>
-            <li>地元企業の情報がGoogle検索で上位に出ない</li>
-            <li>SNSでの発信がない、あっても更新が少ない</li>
-            <li>高校・大学の進路指導でも推薦されない</li>
-            <li>親世代からも「地元企業より都市部」という情報を受ける</li>
-        </ul>
-        <p>つまり、採用難の原因は「競争力がない」のではなく「知られていない」のです。</p>
-
-        <hr class="separator">
-
-        <div class="subsection-title">■課題2：給与・福利厚生での大手企業との競争劣位</div>
-
-        <div class="subsubsection-title">●競争が成り立たないジレンマ</div>
-        <p>地方中小企業の多くが、給与面で大手企業に勝つことはできません。</p>
-        <ul>
-            <li>大手企業：月給25万円～＋充実した福利厚生</li>
-            <li>地方中小企業：月給18万円～＋限定的な福利厚生</li>
-        </ul>
-
-        <div class="subsubsection-title">●データが示す真実</div>
-        <p>シンミドウが地方企業の新入社員100名に「入社理由」をヒアリングした結果：</p>
-        <div class="data-box">
-            <strong>入社理由別の割合：</strong><br>
-            - 給与・待遇：28%<br>
-            - 企業のストーリー・社風：31%<br>
-            - 仕事内容・やりがい：24%<br>
-            - 働き方の柔軟性：17%
-        </div>
-        <p><span class="highlight">給与よりもストーリーが上回っている。</span></p>
-        <p>つまり、地方中小企業が差別化できるのは「給与ではなく、働く意味」なのです。</p>
-
-        <hr class="separator">
-
-        <div class="subsection-title">■課題3：採用サイクルが「1回限り」になっている</div>
-
-        <div class="subsubsection-title">●従来型採用の限界</div>
-        <p>多くの地方中小企業は、以下のサイクルで採用を行います：</p>
-        <ol>
-            <li>人が辞めた → 求人を出す</li>
-            <li>応募が来ない → あきらめる</li>
-            <li>1年後、また誰かが辞める → 求人を出す（を繰り返す）</li>
-        </ol>
-        <p>この「対症療法的採用」では、市場での認知度は高まりません。結果として、毎回応募が少ない状況が続きます。</p>
-
-        <div class="image-container">
-            <img src="images/column2-2.png" alt="地域創生と採用の好循環図解">
-            <div class="image-caption">図2：地域創生と採用の好循環図解</div>
-        </div>
-
-        <hr class="separator">
-
-        <div class="section-title">【「地域創生」と「採用」が一体化する理由】</div>
-
-        <div class="subsection-title">■地域の成長＝企業の成長＝雇用の創出</div>
-        <p>シンミドウが提唱する「地域創生×採用」の考え方は、以下の図式です：</p>
-        <div class="data-box">
-            地域の中小企業が成長する<br>
-            　↓<br>
-            雇用が増える・給与が上がる<br>
-            　↓<br>
-            若い世代が地域に残る・戻ってくる<br>
-            　↓<br>
-            地域の人口減少が止まる<br>
-            　↓<br>
-            自治体の税収が増える・地域経済が活性化する
-        </div>
-
-        <div class="subsection-title">■実例：埼玉県内の工務店での成功事例</div>
-        <p>シンミドウが実施した「採用ブランディング」の事例：</p>
-        <div class="data-box">
-            <strong>【施工前】</strong><br>
-            ・年1～2名の新入社員<br>
-            ・ほぼ採用できない状態<br><br>
-            <strong>【取り組み】</strong><br>
-            ・施工事例をInstagramで毎週発信<br>
-            ・職人のストーリーをYouTubeで発信<br>
-            ・「働き方改革」を公開（週休2日、在宅ワーク可能な事務職）<br>
-            ・地元高校と連携した採用説明会を開催<br><br>
-            <strong>【施工後（1年後）】</strong><br>
-            ・年15名以上の新入社員確保<br>
-            ・地元就職者が7割に
-        </div>
-
-        <div class="image-container">
-            <img src="images/column2-3.png" alt="成功事例から見る採用の改善実績">
-            <div class="image-caption">図3：成功事例から見る採用の改善実績</div>
-        </div>
-
-        <p>この企業の成長は、地域経済にも波及しています。新入社員が地元に住み、地元飲食店や不動産を利用することで、関連産業も潤うようになりました。</p>
-
-        <hr class="separator">
-
-        <div class="section-title">【地方中小企業が今すぐできる「地域創生型採用」】</div>
-
-        <div class="subsection-title">■1．企業のストーリーを「言語化×可視化」する</div>
-        <ul>
-            <li>経営者インタビュー動画を5分程度で作成
-                <ul>
-                    <li>なぜこの事業を始めたのか</li>
-                    <li>地域にどう貢献したいのか</li>
-                </ul>
-            </li>
-            <li>社員インタビューを月1回ペースで発信
-                <ul>
-                    <li>入社理由、仕事のやりがい、キャリアの道</li>
-                </ul>
-            </li>
-            <li>施工事例・製造事例の写真・動画記録
-                <ul>
-                    <li>ビフォーアフターを発信することで、仕事の価値を可視化</li>
-                </ul>
-            </li>
-        </ul>
-
-        <div class="subsection-title">■2．働き方の多様性を「求人票に明記」する</div>
-        <p>都市部にない働き方が、地方中小企業にはあります：</p>
-        <ul>
-            <li>通勤時間が短い（往復30分以内が多い）</li>
-            <li>副業・兼業が可能（複数の仕事を組み合わせる働き方）</li>
-            <li>柔軟な休暇制度（子育て・介護との両立）</li>
-            <li>テレワーク＋オフィス勤務の組み合わせ</li>
-        </ul>
-        <p>これを明確に採用サイトに書くことが重要です。</p>
-
-        <div class="subsection-title">■3．「自治体との採用連携」を活用する</div>
-        <p>埼玉県内のいくつかの市町村では、以下の取り組みを行っています：</p>
-        <ul>
-            <li>地元企業合同説明会の開催（自治体主催）</li>
-            <li>若年層向けインターンシップ補助金（自治体が補助）</li>
-            <li>UIJターン就職者への住宅補助（定住を促進）</li>
-        </ul>
-        <p>地方中小企業は、これらの自治体施策を積極的に活用し、採用へつなげるべきです。</p>
-
-        <div class="image-container">
-            <img src="images/column2-4.png" alt="地域創生型採用の施策と効果">
-            <div class="image-caption">図4：地域創生型採用の施策と効果</div>
-        </div>
-
-        <hr class="separator">
-
-        <div class="section-title">【「地域創生型採用」がもたらす長期的な効果】</div>
-
-        <div class="subsection-title">■企業レベルでの効果</div>
-        <ul>
-            <li>✓ 採用単価の低下（採用媒体費の削減）</li>
-            <li>✓ 離職率の低下（地元採用＝定着率が高い傾向）</li>
-            <li>✓ ブランドイメージの向上（地域への貢献企業として認識）</li>
-            <li>✓ 営業活動への好影響（信用が増す）</li>
-        </ul>
-
-        <div class="subsection-title">■地域レベルでの効果</div>
-        <ul>
-            <li>✓ 人口流出の抑制</li>
-            <li>✓ 関連産業の活性化（新入社員による消費など）</li>
-            <li>✓ 自治体の財政改善（税収増加）</li>
-            <li>✓ 地域のコミュニティ維持</li>
-        </ul>
-
-        <hr class="separator">
-
-        <div class="section-title">【まとめ】</div>
-        <p>地方中小企業の採用難は、単なる採用戦略の問題ではなく、地域創生の問題です。</p>
-        <p>逆に言えば、「採用を強くする」ことが、そのまま「地域を強くする」ことになるのです。</p>
-        <p>重要なのは3点：</p>
-        <ol>
-            <li>ストーリーの発信～給与競争ではなく、働く意味で競争する</li>
-            <li>働き方の柔軟化～都市部にない地方の強みを活かす</li>
-            <li>自治体との連携～公的支援を賢く活用する</li>
-        </ol>
-        <p>シンミドウは、これまで50社以上の地方中小企業の「採用×地域創生」を支援してきました。その経験から確信しているのは、「小さい企業ほど、工夫次第で大手に勝てる」ということです。</p>
-        <p>あなたの企業も、地域も、まだ間に合います。今年は、「採用戦略の見直し＝地域への投資」と考えて、動き始めてみませんか。</p>
-
+        <div class="slide-counter"><span id="current-slide">1</span> / 4</div>
         <div class="meta">
-            <p><strong>作成日</strong>：2026年2月23日<br>
-            <strong>作成者</strong>：シンミドウコラム自動作成プロジェクト<br>
-            <strong>対策</strong>：構造化データ、E-E-A-T強化、AI引用対応版</p>
+            <p><strong>作成日</strong>：2026年2月23日<br><strong>作成者</strong>：シンミドウコラム自動作成プロジェクト<br><strong>表示形式</strong>：インタラクティブスライドショー（Swiper.js）</p>
         </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            loop: true,
+            pagination: { el: '.swiper-pagination', clickable: true },
+            navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' },
+            on: { slideChange: function() { document.getElementById('current-slide').textContent = this.realIndex + 1; } }
+        });
+    </script>
 </body>
 </html>

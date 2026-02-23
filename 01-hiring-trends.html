@@ -4,29 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>採用の最新記事まとめ～2026年、中小企業が押さえるべき採用トレンド～</title>
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.8;
             color: #333;
             background-color: #f9f9f9;
-            margin: 0;
             padding: 20px;
         }
+
         .article-container {
-            max-width: 900px;
+            max-width: 1000px;
             margin: 0 auto;
             background-color: white;
             padding: 40px;
             border-radius: 8px;
             box-shadow: 0 2px 8px rgba(0,0,0,0.1);
         }
+
         h1 {
             color: #1a73e8;
             border-bottom: 3px solid #1a73e8;
             padding-bottom: 15px;
-            margin-bottom: 10px;
+            margin-bottom: 30px;
+            font-size: 1.8em;
         }
+
         .target {
             background-color: #f0f0f0;
             padding: 15px;
@@ -34,83 +47,143 @@
             margin: 20px 0;
             font-style: italic;
         }
-        .toc {
-            background-color: #f9f9f9;
-            padding: 20px;
-            border-radius: 5px;
+
+        .intro-text {
             margin: 30px 0;
+            line-height: 1.8;
+            color: #555;
         }
-        .toc h2 {
-            margin-top: 0;
-            color: #1a73e8;
+
+        .intro-text p {
+            margin: 15px 0;
         }
-        .toc ol {
-            margin: 0;
-            padding-left: 25px;
+
+        /* Swiper Container Styles */
+        .swiper {
+            width: 100%;
+            height: 500px;
+            margin: 40px 0;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
         }
-        .toc li {
-            margin: 8px 0;
+
+        .swiper-slide {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #f5f5f5;
         }
-        .separator {
-            border: none;
-            border-top: 2px solid #ddd;
-            margin: 30px 0;
+
+        .swiper-slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
         }
+
+        .swiper-button-next,
+        .swiper-button-prev {
+            background-color: rgba(26, 115, 232, 0.9);
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            color: white;
+        }
+
+        .swiper-button-next::after,
+        .swiper-button-prev::after {
+            font-size: 20px;
+        }
+
+        .swiper-button-next:hover,
+        .swiper-button-prev:hover {
+            background-color: rgba(26, 115, 232, 1);
+        }
+
+        .swiper-pagination-bullet {
+            background-color: #1a73e8;
+            opacity: 0.5;
+        }
+
+        .swiper-pagination-bullet-active {
+            background-color: #1a73e8;
+            opacity: 1;
+        }
+
+        .slide-counter {
+            text-align: center;
+            margin-top: 15px;
+            color: #666;
+            font-size: 0.9em;
+        }
+
+        .content-section {
+            margin: 40px 0;
+        }
+
         .section-title {
             color: #1a73e8;
             font-size: 1.4em;
-            margin-top: 30px;
-            margin-bottom: 15px;
+            margin: 30px 0 15px 0;
             border-left: 4px solid #1a73e8;
             padding-left: 15px;
         }
+
         .subsection-title {
             color: #333;
             font-size: 1.2em;
-            margin-top: 20px;
-            margin-bottom: 10px;
+            margin: 20px 0 10px 0;
             font-weight: bold;
         }
-        .image-container {
-            text-align: center;
-            margin: 30px 0;
-            padding: 20px;
-            background-color: #f9f9f9;
-            border-radius: 5px;
+
+        ul, ol {
+            margin: 15px 0 15px 25px;
         }
-        .image-container img {
-            width: 100%;
-            max-width: 800px;
-            height: auto;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-        }
-        .image-caption {
-            text-align: center;
-            font-size: 0.9em;
-            color: #666;
-            margin-top: 10px;
-            font-style: italic;
-        }
-        ul {
-            margin: 15px 0;
-            padding-left: 25px;
-        }
+
         li {
             margin: 10px 0;
+            line-height: 1.6;
         }
+
         .highlight {
             background-color: #fffacd;
             padding: 2px 6px;
             border-radius: 3px;
         }
+
         .meta {
             background-color: #f0f0f0;
             padding: 15px;
             border-radius: 5px;
-            margin-top: 30px;
+            margin-top: 40px;
             font-size: 0.9em;
             color: #666;
+        }
+
+        .separator {
+            border: none;
+            border-top: 2px solid #ddd;
+            margin: 30px 0;
+        }
+
+        @media (max-width: 768px) {
+            .article-container {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 1.4em;
+            }
+
+            .swiper {
+                height: 300px;
+            }
+
+            .swiper-button-next,
+            .swiper-button-prev {
+                width: 40px;
+                height: 40px;
+            }
         }
     </style>
 </head>
@@ -122,123 +195,146 @@
             <strong>【ターゲット】</strong>採用難に悩む中小企業の経営者
         </div>
 
-        <div class="toc">
-            <h2>【目次】</h2>
+        <!-- Swiper スライダー -->
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="https://takeda-png.github.io/sinmido-recruitment-columns/images/column1-1.png" alt="2026年採用市場トレンドと対応策の概要">
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://takeda-png.github.io/sinmido-recruitment-columns/images/column1-2.png" alt="企業ストーリー発信による採用力向上">
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://takeda-png.github.io/sinmido-recruitment-columns/images/column1-3.png" alt="働き方の多様性が採用競争力に">
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://takeda-png.github.io/sinmido-recruitment-columns/images/column1-4.png" alt="継続的な採用情報発信戦略">
+                </div>
+            </div>
+
+            <!-- Navigation buttons -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+
+            <!-- Pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
+
+        <div class="slide-counter">
+            <span id="current-slide">1</span> / 4
+        </div>
+
+        <div class="content-section">
+            <div class="section-title">【導入】</div>
+            <div class="intro-text">
+                <p>「人手不足」は、もはや中小企業の経営課題の最上位です。</p>
+                <p>特に今、採用市場は急速に変わっています。求人票を出しても応募が来ない、内定を出しても辞退される、採用にかかるコストだけが膨らむ――こんなお悩みを聞くことが増えました。</p>
+                <p>しかし、見方を変えると、採用の最新トレンドを理解し、適切に対応する企業には、大きなチャンスがあります。</p>
+                <p>このコラムでは、2026年の採用市場で注目すべき3つのトレンドと、それへの対応策をお伝えします。</p>
+            </div>
+
+            <hr class="separator">
+
+            <div class="section-title">【1つ目のトレンド：「企業のストーリー」が採用力を左右する時代】</div>
+            <p>求職者が企業を選ぶ基準が変わりました。</p>
+            <p>給与や福利厚生ももちろん大事ですが、今の求職者（特に若い世代）は、「この会社は何をしたいのか」「働く意味は何か」という「企業のストーリー」を重視しています。</p>
+
+            <div class="subsection-title">■何が起きているのか</div>
+            <ul>
+                <li>求人サイトに掲載される情報だけでは、企業の違いが見えにくい</li>
+                <li>求職者は、企業のHP、SNS、インタビュー記事などで「本当の顔」を探している</li>
+            </ul>
+
+            <div class="subsection-title">■中小企業ができること</div>
+            <ul>
+                <li>経営者の想い、会社の成り立ち、事業を通じた地域への貢献を言語化する</li>
+                <li>働く社員の声や成長ストーリーをSNSやHP、YouTubeで発信する</li>
+                <li>採用説明会やインタビューでは、スペック情報よりも「らしさ」を伝える</li>
+            </ul>
+
+            <hr class="separator">
+
+            <div class="section-title">【2つ目のトレンド：「働き方の多様性」が採用競争力になる】</div>
+            <p>かつての「正社員＋給与」という採用軸は、もう十分ではありません。</p>
+
+            <div class="subsection-title">■何が起きているのか</div>
+            <ul>
+                <li>リモートワーク、短時間勤務、副業可、フレックス制など、柔軟な働き方を求める層が増加</li>
+                <li>「Uターン・Iターン」で地方での暮らしを求める都市部の人材も増えている</li>
+                <li>育児中の親、介護と仕事の両立を望む人など、ニーズは多様化している</li>
+            </ul>
+
+            <div class="subsection-title">■中小企業ができること</div>
+            <ul>
+                <li>自社に合った柔軟な働き方制度を設計・導入する</li>
+                <li>「週3日勤務」「在宅勤務可」など、働き方の選択肢を求人票に明記する</li>
+                <li>既存社員がどのように働いているのかを、具体的に示す</li>
+                <li>地方企業は、地域での暮らしの豊かさを採用メッセージに組み込む</li>
+            </ul>
+
+            <hr class="separator">
+
+            <div class="section-title">【3つ目のトレンド：「採用」は一時的ではなく「継続的な発信」の時代】</div>
+            <p>従来の採用は「採用時期が来たら求人を出す」という期間限定型でした。</p>
+            <p>今は違います。</p>
+
+            <div class="subsection-title">■何が起きているのか</div>
+            <ul>
+                <li>優秀な候補者は、求人が出る前から「あの会社、気になるな」という認識を持っている</li>
+                <li>SNS、オウンドメディア、業界イベントなどを通じて、継続的に企業情報を発信している企業に、良い人材が集まる</li>
+                <li>「採用活動」と「企業PR活動」の境界が曖昧になっている</li>
+            </ul>
+
+            <div class="subsection-title">■中小企業ができること</div>
+            <ul>
+                <li>企業ブログ、SNS（Instagram、X、YouTube）で、定期的に情報発信する</li>
+                <li>業界イベント、セミナー、地域のコミュニティに参加して、認知を高める</li>
+                <li>採用イベントに参加するだけでなく、採用イベント後のフォローを仕組み化する</li>
+                <li>採用と関係なく見えても、「会社で起きている日常」を発信することが、長期的な採用力につながる</li>
+            </ul>
+
+            <hr class="separator">
+
+            <div class="section-title">【まとめ】</div>
+            <p>2026年の採用市場は、「小手先の求人対策」では通用しない時代です。</p>
+            <p>必要なのは：</p>
             <ol>
-                <li>導入</li>
-                <li>1つ目のトレンド：「企業のストーリー」が採用力を左右する時代</li>
-                <li>2つ目のトレンド：「働き方の多様性」が採用競争力になる</li>
-                <li>3つ目のトレンド：「採用」は一時的ではなく「継続的な発信」の時代</li>
-                <li>まとめ</li>
+                <li>企業のストーリーを、言葉と映像で伝える努力</li>
+                <li>働き手の多様なニーズに応える柔軟性</li>
+                <li>採用活動を「継続的な発信」と考える姿勢</li>
             </ol>
+            <p>これらは、大企業と中小企業の力の差が最も出やすい部分です。なぜなら、大企業の「無難」な採用メッセージよりも、中小企業の「らしさ」「人間味」の方が、求職者の心に響くことが多いから。</p>
+            <p>採用に悩む経営者の皆さんは、この機会を逆手に取ってください。「小さい」ことは、強みになります。</p>
+            <p>ぜひ、採用戦略の見直しを、今年のテーマにしてみてはいかがでしょうか。</p>
         </div>
-
-        <hr class="separator">
-
-        <div class="section-title">【導入】</div>
-        <p>「人手不足」は、もはや中小企業の経営課題の最上位です。</p>
-        <p>特に今、採用市場は急速に変わっています。求人票を出しても応募が来ない、内定を出しても辞退される、採用にかかるコストだけが膨らむ――こんなお悩みを聞くことが増えました。</p>
-        <p>しかし、見方を変えると、採用の最新トレンドを理解し、適切に対応する企業には、大きなチャンスがあります。</p>
-        <p>このコラムでは、2026年の採用市場で注目すべき3つのトレンドと、それへの対応策をお伝えします。</p>
-
-        <div class="image-container">
-            <img src="images/column1-1.png" alt="2026年採用市場トレンドと対応策の概要">
-            <div class="image-caption">図1：2026年採用市場トレンドと対応策の概要</div>
-        </div>
-
-        <hr class="separator">
-
-        <div class="section-title">【1つ目のトレンド：「企業のストーリー」が採用力を左右する時代】</div>
-        <p>求職者が企業を選ぶ基準が変わりました。</p>
-        <p>給与や福利厚生ももちろん大事ですが、今の求職者（特に若い世代）は、「この会社は何をしたいのか」「働く意味は何か」という「企業のストーリー」を重視しています。</p>
-
-        <div class="subsection-title">■何が起きているのか</div>
-        <ul>
-            <li>求人サイトに掲載される情報だけでは、企業の違いが見えにくい</li>
-            <li>求職者は、企業のHP、SNS、インタビュー記事などで「本当の顔」を探している</li>
-        </ul>
-
-        <div class="subsection-title">■中小企業ができること</div>
-        <ul>
-            <li>経営者の想い、会社の成り立ち、事業を通じた地域への貢献を言語化する</li>
-            <li>働く社員の声や成長ストーリーをSNSやHP、YouTubeで発信する</li>
-            <li>採用説明会やインタビューでは、スペック情報よりも「らしさ」を伝える</li>
-        </ul>
-
-        <div class="image-container">
-            <img src="images/column1-2.png" alt="企業ストーリー発信による採用力向上">
-            <div class="image-caption">図2：企業ストーリー発信による採用力向上</div>
-        </div>
-
-        <hr class="separator">
-
-        <div class="section-title">【2つ目のトレンド：「働き方の多様性」が採用競争力になる】</div>
-        <p>かつての「正社員＋給与」という採用軸は、もう十分ではありません。</p>
-
-        <div class="subsection-title">■何が起きているのか</div>
-        <ul>
-            <li>リモートワーク、短時間勤務、副業可、フレックス制など、柔軟な働き方を求める層が増加</li>
-            <li>「Uターン・Iターン」で地方での暮らしを求める都市部の人材も増えている</li>
-            <li>育児中の親、介護と仕事の両立を望む人など、ニーズは多様化している</li>
-        </ul>
-
-        <div class="subsection-title">■中小企業ができること</div>
-        <ul>
-            <li>自社に合った柔軟な働き方制度を設計・導入する</li>
-            <li>「週3日勤務」「在宅勤務可」など、働き方の選択肢を求人票に明記する</li>
-            <li>既存社員がどのように働いているのかを、具体的に示す</li>
-            <li>地方企業は、地域での暮らしの豊かさを採用メッセージに組み込む</li>
-        </ul>
-
-        <div class="image-container">
-            <img src="images/column1-3.png" alt="働き方の多様性が採用競争力に">
-            <div class="image-caption">図3：働き方の多様性が採用競争力に</div>
-        </div>
-
-        <hr class="separator">
-
-        <div class="section-title">【3つ目のトレンド：「採用」は一時的ではなく「継続的な発信」の時代】</div>
-        <p>従来の採用は「採用時期が来たら求人を出す」という期間限定型でした。</p>
-        <p>今は違います。</p>
-
-        <div class="subsection-title">■何が起きているのか</div>
-        <ul>
-            <li>優秀な候補者は、求人が出る前から「あの会社、気になるな」という認識を持っている</li>
-            <li>SNS、オウンドメディア、業界イベントなどを通じて、継続的に企業情報を発信している企業に、良い人材が集まる</li>
-            <li>「採用活動」と「企業PR活動」の境界が曖昧になっている</li>
-        </ul>
-
-        <div class="subsection-title">■中小企業ができること</div>
-        <ul>
-            <li>企業ブログ、SNS（Instagram、X、YouTube）で、定期的に情報発信する</li>
-            <li>業界イベント、セミナー、地域のコミュニティに参加して、認知を高める</li>
-            <li>採用イベントに参加するだけでなく、採用イベント後のフォローを仕組み化する</li>
-            <li>採用と関係なく見えても、「会社で起きている日常」を発信することが、長期的な採用力につながる</li>
-        </ul>
-
-        <div class="image-container">
-            <img src="images/column1-4.png" alt="継続的な採用情報発信戦略">
-            <div class="image-caption">図4：継続的な採用情報発信戦略</div>
-        </div>
-
-        <hr class="separator">
-
-        <div class="section-title">【まとめ】</div>
-        <p>2026年の採用市場は、「小手先の求人対策」では通用しない時代です。</p>
-        <p>必要なのは：</p>
-        <ol>
-            <li>企業のストーリーを、言葉と映像で伝える努力</li>
-            <li>働き手の多様なニーズに応える柔軟性</li>
-            <li>採用活動を「継続的な発信」と考える姿勢</li>
-        </ol>
-        <p>これらは、大企業と中小企業の力の差が最も出やすい部分です。なぜなら、大企業の「無難」な採用メッセージよりも、中小企業の「らしさ」「人間味」の方が、求職者の心に響くことが多いから。</p>
-        <p>採用に悩む経営者の皆さんは、この機会を逆手に取ってください。「小さい」ことは、強みになります。</p>
-        <p>ぜひ、採用戦略の見直しを、今年のテーマにしてみてはいかがでしょうか。</p>
 
         <div class="meta">
             <p><strong>作成日</strong>：2026年2月23日<br>
             <strong>作成者</strong>：シンミドウコラム自動作成プロジェクト</p>
         </div>
     </div>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+        // Swiper initialization
+        const swiper = new Swiper('.swiper', {
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            on: {
+                slideChange: function() {
+                    document.getElementById('current-slide').textContent = this.realIndex + 1;
+                }
+            }
+        });
+    </script>
 </body>
 </html>
