@@ -11,6 +11,10 @@
         .article-container { max-width: 1000px; margin: 0 auto; background-color: white; padding: 40px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
         h1 { color: #1a73e8; border-bottom: 3px solid #1a73e8; padding-bottom: 15px; margin-bottom: 30px; font-size: 1.8em; }
         .target { background-color: #f0f0f0; padding: 15px; border-left: 4px solid #1a73e8; margin: 20px 0; font-style: italic; }
+        .toc { background-color: #f9f9f9; padding: 20px; border-radius: 5px; margin: 30px 0; border-left: 4px solid #1a73e8; }
+        .toc h2 { margin-top: 0; color: #1a73e8; font-size: 1.1em; }
+        .toc ol { margin: 10px 0; padding-left: 25px; }
+        .toc li { margin: 8px 0; }
         .swiper { width: 100%; height: 500px; margin: 40px 0; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.15); }
         .swiper-slide { display: flex; align-items: center; justify-content: center; background-color: #f5f5f5; }
         .swiper-slide img { width: 100%; height: 100%; object-fit: contain; }
@@ -28,6 +32,15 @@
     <div class="article-container">
         <h1>■ 地方中小企業の人口流出を止める方法～地域創生と採用の関係性～</h1>
         <div class="target"><strong>【ターゲット】</strong>地方に拠点を置く中小企業の経営者</div>
+        <div class="toc">
+            <h2>【目次】</h2>
+            <ol>
+                <li>導入</li>
+                <li>地方企業が抱える採用課題</li>
+                <li>地域を活かした採用戦略</li>
+                <li>成功事例</li>
+            </ol>
+        </div>
         <div class="swiper">
             <div class="swiper-wrapper">
                 <div class="swiper-slide"><img src="https://takeda-png.github.io/sinmido-recruitment-columns/images/column2-1.png" alt="地域創生採用戦略の全体像"></div>
@@ -40,15 +53,12 @@
             <div class="swiper-pagination"></div>
         </div>
         <div class="slide-counter"><span id="current-slide">1</span> / 4</div>
-        <div class="meta">
-            <p><strong>作成日</strong>：2026年2月23日<br><strong>作成者</strong>：シンミドウコラム自動作成プロジェクト<br><strong>表示形式</strong>：インタラクティブスライドショー（Swiper.js）</p>
-        </div>
+        <div class="meta"><p><strong>作成日</strong>：2026年2月23日<br><strong>作成者</strong>：シンミドウコラム自動作成プロジェクト</p></div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
         const swiper = new Swiper('.swiper', {
-            loop: true,
-            pagination: { el: '.swiper-pagination', clickable: true },
+            loop: true, pagination: { el: '.swiper-pagination', clickable: true },
             navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' },
             on: { slideChange: function() { document.getElementById('current-slide').textContent = this.realIndex + 1; } }
         });
